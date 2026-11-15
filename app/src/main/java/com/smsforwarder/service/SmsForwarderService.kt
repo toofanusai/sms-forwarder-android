@@ -1,8 +1,10 @@
 package com.smsforwarder.service
 
 import android.app.Service
+import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
+import android.os.Build
 import android.os.IBinder
 import android.provider.Telephony
 import android.util.Log
@@ -54,7 +56,12 @@ class SmsForwarderService : Service() {
             priority = 999
         }
         try {
-            registerReceiver(dynamicSmsReceiver, filter)
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                registerReceiver(dynamicSmsReceiver, filter, Context.RECEIVER_NOT_EXPORTED)
+            } else {
+                @Suppress("UnspecifiedRegisterReceiverFlag")
+                registerReceiver(dynamicSmsReceiver, filter)
+            }
             Log.d(TAG, "Dynamic SMS receiver registered")
         } catch (e: Exception) {
             Log.e(TAG, "Failed to register dynamic SMS receiver", e)

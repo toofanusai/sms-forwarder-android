@@ -41,7 +41,6 @@ class LogFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        setHasOptionsMenu(true)
 
         adapter = LogAdapter()
         binding.recyclerLog.layoutManager = LinearLayoutManager(requireContext())
