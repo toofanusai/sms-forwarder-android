@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">SMS Forwarder</string>
+
+    <!-- Bottom navigation labels -->
+    <string name="nav_rules">قوانین</string>
+    <string name="nav_log">گزارش</string>
+    <string name="nav_settings">تنظیمات</string>
+
+    <!-- Notification channels -->
+    <string name="channel_service_name">سرویس پیش‌زمینه</string>
+    <string name="channel_service_desc">سرویس دائمی ارسال پیامک</string>
+    <string name="channel_events_name">رویدادهای پیامک</string>
+    <string name="channel_events_desc">اعلان‌های دریافت پیامک</string>
+
+    <!-- Service notification -->
+    <string name="service_notification_title">SMS Forwarder فعال است</string>
+    <string name="service_notification_text">در حال نظارت بر پیامک‌های دریافتی</string>
+
+    <!-- Rules screen -->
+    <string name="no_rules">هیچ قانونی تعریف نشده است.\nروی + کلیک کنید تا یک قانون اضافه کنید.</string>
+    <string name="add_rule">افزودن قانون</string>
+    <string name="delete_rule_title">حذف قانون</string>
+    <string name="delete_rule_message">آیا مطمئن هستید که می‌خواهید «%s» را حذف کنید؟</string>
+
+    <!-- Rule editor -->
+    <string name="rule_name">نام قانون</string>
+    <string name="sim_selection">سیم‌کارت</string>
+    <string name="sim1">سیم ۱</string>
+    <string name="sim2">سیم ۲</string>
+    <string name="sim_both">هر دو</string>
+    <string name="whitelist_filter">فیلتر فرستنده (لیست سفید)</string>
+    <string name="add_number">افزودن شماره</string>
+    <string name="add">افزودن</string>
+    <string name="destinations">مقصدها</string>
+    <string name="telegram">Telegram</string>
+    <string name="telegram_token">توکن ربات Telegram</string>
+    <string name="telegram_chat_id">شناسه گفتگو (Chat ID)</string>
+    <string name="webhook">Webhook</string>
+    <string name="webhook_url">آدرس Webhook</string>
+    <string name="save">ذخیره</string>
+    <string name="rule_saved">قانون ذخیره شد</string>
+    <string name="error_name_required">نام الزامی است</string>
+
+    <!-- Log screen -->
+    <string name="no_logs">هیچ گزارشی موجود نیست</string>
+    <string name="clear_log">پاک کردن گزارش</string>
+    <string name="clear_log_title">پاک کردن گزارش</string>
+    <string name="clear_log_message">تمام گزارش‌ها پاک خواهند شد. ادامه می‌دهید؟</string>
+    <string name="clear">پاک کردن</string>
+    <string name="cancel">لغو</string>
+    <string name="delete">حذف</string>
+
+    <!-- Settings -->
+    <string name="section_service">سرویس</string>
+    <string name="start_on_boot">شروع خودکار با بوت دستگاه</string>
+    <string name="battery_optimization">بهینه‌سازی باتری</string>
+    <string name="battery_opt_ok">✓ بهینه‌سازی باتری غیرفعال است</string>
+    <string name="battery_opt_warning">⚠ باتری ممکن است سرویس را متوقف کند</string>
+    <string name="configure">پیکربندی</string>
+    <string name="section_test">آزمایش</string>
+    <string name="test_telegram">ارسال پیام آزمایشی به Telegram</string>
+    <string name="test_webhook">ارسال درخواست آزمایشی به Webhook</string>
+    <string name="test_success">✓ آزمایش موفق بود</string>
+    <string name="test_failed">✗ آزمایش ناموفق بود</string>
+    <string name="no_telegram_rule">هیچ قانون فعال Telegram‌ای وجود ندارد</string>
+    <string name="no_webhook_rule">هیچ قانون فعال Webhook‌ای وجود ندارد</string>
+    <string name="test_message_body">این یک پیام آزمایشی از SMS Forwarder است</string>
+    <string name="version_format">نسخه %s</string>
+
+    <!-- Permissions -->
+    <string name="permissions_required">برای عملکرد صحیح، تمام مجوزها باید اعطا شوند.</string>
+</resources>

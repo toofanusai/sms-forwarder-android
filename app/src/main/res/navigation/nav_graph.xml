@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/rulesFragment">
+
+    <fragment
+        android:id="@+id/rulesFragment"
+        android:name="com.smsforwarder.ui.RulesFragment"
+        android:label="@string/nav_rules"
+        tools:layout="@layout/fragment_rules">
+
+        <action
+            android:id="@+id/action_rulesFragment_to_ruleEditorFragment"
+            app:destination="@id/ruleEditorFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ruleEditorFragment"
+        android:name="com.smsforwarder.ui.RuleEditorFragment"
+        android:label="@string/rule_name"
+        tools:layout="@layout/fragment_rule_editor">
+
+        <argument
+            android:name="ruleId"
+            app:argType="string"
+            android:defaultValue="" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/logFragment"
+        android:name="com.smsforwarder.ui.LogFragment"
+        android:label="@string/nav_log"
+        tools:layout="@layout/fragment_log" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.smsforwarder.ui.SettingsFragment"
+        android:label="@string/nav_settings"
+        tools:layout="@layout/fragment_settings" />
+
+</navigation>
